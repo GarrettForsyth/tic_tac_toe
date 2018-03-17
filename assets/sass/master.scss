@@ -1,0 +1,72 @@
+$board-border: 2px solid black;
+$box-height: 25vh;
+
+.container {
+  max-width: 1000px;
+  max-height: 1000px;
+  margin: 50px auto;
+}
+
+.row {
+  margin: auto;
+  text-align: center;
+}
+
+.square {
+  display: inline-block;
+  position: relative;
+  max-width: $box-height;
+  width: 32%;
+} 
+.square:after{
+
+  content: "";
+  /* padding is calculated by a % of its parent's WIDTH */
+  padding-bottom: 100%;
+  display: block;
+}
+
+.content {
+  position: absolute;
+  font-size: $box-height;
+  left: 20%;
+}
+
+.x {
+  background-color: orange;
+}
+
+.o {
+  background-color: blue;
+}
+
+/* create grid */
+#box-1 {
+  border-right: $board-border;
+  border-bottom: $board-border;
+}
+#box-2{
+  border-bottom: $board-border;
+}
+#box-3{
+  border-left: $board-border;
+  border-bottom: $board-border;
+}
+#box-4{
+  border-right: $board-border;
+}
+#box-6{
+  border-left: $board-border;
+}
+#box-7{
+  border-top: $board-border;
+  border-right: $board-border;
+}
+#box-8{
+  border-top: $board-border;
+}
+#box-9{
+  border-top: $board-border;
+  border-left: $board-border;
+}
+

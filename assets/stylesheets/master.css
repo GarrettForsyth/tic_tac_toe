@@ -1,3 +1,62 @@
+.container {
+  max-width: 1000px;
+  max-height: 1000px;
+  margin: 50px auto; }
 
+.row {
+  margin: auto;
+  text-align: center; }
+
+.square {
+  display: inline-block;
+  position: relative;
+  max-width: 25vh;
+  width: 32%; }
+
+.square:after {
+  content: "";
+  /* padding is calculated by a % of its parent's WIDTH */
+  padding-bottom: 100%;
+  display: block; }
+
+.content {
+  position: absolute;
+  font-size: 25vh;
+  left: 20%; }
+
+.x {
+  background-color: orange; }
+
+.o {
+  background-color: blue; }
+
+/* create grid */
+#box-1 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black; }
+
+#box-2 {
+  border-bottom: 2px solid black; }
+
+#box-3 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black; }
+
+#box-4 {
+  border-right: 2px solid black; }
+
+#box-6 {
+  border-left: 2px solid black; }
+
+#box-7 {
+  border-top: 2px solid black;
+  border-right: 2px solid black; }
+
+#box-8 {
+  border-top: 2px solid black; }
+
+#box-9 {
+  border-top: 2px solid black;
+  border-left: 2px solid black; }
 
 /*# sourceMappingURL=master.css.map */
